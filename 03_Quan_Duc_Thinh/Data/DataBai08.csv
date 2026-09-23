@@ -1,0 +1,17 @@
+﻿Mảng,Chỉ số left,Chỉ số right,Expected result
+5; 2; 8; 1,0,3,1; 2; 5; 8
+,0,0,Lỗi: Mảng cần sắp xếp không được rỗng
+NULL,0,3,Lỗi: Mảng cần sắp xếp không được null
+5; 2; 8; 1,-9,3,Lỗi: Chỉ số left không được < 0
+5; 2; 8; 1,3,3,5; 2; 8; 1
+5; 2; 8; 1,0,-9,5; 2; 8; 1
+5; 2; 8; 1,0,4,Lỗi: Chỉ số righ đang vượt quá phạm vi hiện tại của mảng
+5,0,0,5
+5; 2; 8; 1,0,3, 1; 2; 5; 8
+5; 2; 8; 1,2,3,5; 2; 1; 8
+5; 2; 8; 1,0,0,5; 2; 8; 1
+5; 2; 8; 1,0,3,1; 2; 5; 8
+5; 2; 8; 1,-1,3,Lỗi: Chỉ số left không được < 0
+5; 2; 8; 1,3,3,5;2; 8; 1
+5; 2; 8; 1,0,0,5; 2; 8; 1
+5; 2; 8; 1,0,4,Lỗi: Chỉ số right phải <= độ dài mảng - 1
