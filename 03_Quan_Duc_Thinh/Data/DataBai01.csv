@@ -1,0 +1,16 @@
+﻿a,b,c,Expected Result
+5,6,7,7
+-5,6,7,Lỗi số a phải thuộc [1-50]
+500,6,7,Lỗi số a phải thuộc [1-50]
+5,-6,7,Lỗi số b phải thuộc [1-50]
+5,500,7,Lỗi số b phải thuộc [1-50]
+5,6,-7,Lỗi số c phải thuộc [1-50]
+5,6,600,Lỗi số c phải thuộc [1-50]
+1,1,1,1
+50,50,50,50
+0,6,7,Lỗi số a phải thuộc [1-50]
+51,6,7,Lỗi số a phải thuộc [1-50]
+5,0,7,Lỗi số b phải thuộc [1-50]
+5,51,7,Lỗi số b phải thuộc [1-50]
+5,6,0,Lỗi số c phải thuộc [1-50]
+5,6,51,Lỗi số c phải thuộc [1-50]

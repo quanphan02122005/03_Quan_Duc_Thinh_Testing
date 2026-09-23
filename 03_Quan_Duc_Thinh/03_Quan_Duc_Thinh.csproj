@@ -53,14 +53,27 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bai02.cs" />
+    <Compile Include="Bai07.cs" />
+    <Compile Include="Bai08.cs" />
+    <Compile Include="UnitTestBai01.cs" />
+    <Compile Include="UnitTestBai02.cs" />
+    <Compile Include="UnitTestBai03.cs" />
     <Compile Include="UnitTestBai04.cs" />
     <Compile Include="UnitTestBai06.cs" />
     <Compile Include="UnitTestBai05.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\DataBai01.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\DataBai03.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Data\DataBai06.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -74,6 +87,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\DataBai04.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\DataBai02.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
