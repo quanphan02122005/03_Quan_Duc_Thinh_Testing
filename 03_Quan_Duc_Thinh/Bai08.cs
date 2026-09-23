@@ -8,7 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace _03_Quan_Duc_Thinh
 {
     [TestClass]
-    public class UntiTestBai08
+    public class Bai08
     {
         public static IEnumerable<object[]> LoadCsvData()
         {

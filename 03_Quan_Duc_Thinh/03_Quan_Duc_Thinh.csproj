@@ -52,8 +52,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTestBai07.cs" />
-    <Compile Include="UntiTestBai08.cs" />
+    <Compile Include="Bai07.cs" />
+    <Compile Include="Bai08.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
