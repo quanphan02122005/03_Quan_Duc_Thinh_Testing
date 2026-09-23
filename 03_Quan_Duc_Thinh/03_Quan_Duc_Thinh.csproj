@@ -56,12 +56,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UnitTestBai04.cs" />
+    <Compile Include="UnitTestBai06.cs" />
     <Compile Include="UnitTestBai05.cs" />
-    <Compile Include="UnitTestBai07.cs" />
-    <Compile Include="UntiTestBai08.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\DataBai06.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Data\DataBai07.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

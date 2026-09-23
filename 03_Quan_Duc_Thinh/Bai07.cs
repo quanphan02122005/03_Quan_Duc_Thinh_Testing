@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace _03_Quan_Duc_Thinh
 {
     [TestClass]
-    public class UnitTestBai07
+    public class Bai07
     {
         public static IEnumerable<object[]> LoadCsvData()
         {

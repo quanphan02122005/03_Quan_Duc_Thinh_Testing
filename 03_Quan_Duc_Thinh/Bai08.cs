@@ -8,7 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace _03_Quan_Duc_Thinh
 {
     [TestClass]
-    public class UntiTestBai08
+    public class Bai08
     {
         public static IEnumerable<object[]> LoadCsvData()
         {
@@ -51,7 +51,7 @@ namespace _03_Quan_Duc_Thinh
         [DataTestMethod]
         [DynamicData(nameof(LoadCsvData), DynamicDataSourceType.Method)]
         [DeploymentItem("Data\\DataBai08.csv", "Data")]
-        public void ChayTestBai14(int[] list, int left, int right, string expected)
+        public void ChayTestQuickSort(int[] list, int left, int right, string expected)
         {
             MethodLibrary.MethodLibrary o = new MethodLibrary.MethodLibrary();
 
