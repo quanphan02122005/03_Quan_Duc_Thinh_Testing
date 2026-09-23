@@ -1,0 +1,10 @@
+﻿Test case no.,s,n,p,Expected result
+1,hungthinh,5,4,hung
+2,hungthinh,-1,1,hungthinh
+3,hungthinh,2,-1,hungthinh
+4,hungthinh,2,9,hungthinh
+5,hungthinh,0,0,hungthinh
+6,hungthinh,2,7,hungthi
+7,hungthinh,-1,-1,hungthinh
+8,hungthinh,1,-1,hungthinh
+9,hungthinh,1,9,hungthinh
