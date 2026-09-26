@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace _03_Quan_Duc_Thinh
 {
     [TestClass]
-    public class UnitTestBai03
+    public class Bai03
     {
         public TestContext TestContext { get; set; }
 

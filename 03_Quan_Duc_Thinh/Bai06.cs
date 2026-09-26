@@ -7,7 +7,7 @@ using System.Text;
 namespace _03_Quan_Duc_Thinh
 {
     [TestClass]
-    public class UnitTestBai06
+    public class Bai06
     {
         private TestContext testContextInstance;
 

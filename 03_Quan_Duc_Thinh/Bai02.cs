@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace _03_Quan_Duc_Thinh
 {
     [TestClass]
-    public class UnitTestBai02
+    public class Bai02
     {
         public TestContext TestContext { get; set; }
 

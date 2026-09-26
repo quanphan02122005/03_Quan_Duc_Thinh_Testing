@@ -8,7 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace _03_Quan_Duc_Thinh
 {
     [TestClass]
-    public class UnitTestBai01
+    public class Bai01
     {
         public TestContext TestContext { get; set; }
 
