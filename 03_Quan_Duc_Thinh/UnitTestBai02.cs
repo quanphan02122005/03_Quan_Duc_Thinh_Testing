@@ -39,17 +39,14 @@ namespace _03_Quan_Duc_Thinh
             {
                 string line = lines[i].Trim();
                 if (string.IsNullOrWhiteSpace(line)) continue;
-                // Bỏ header
                 if (line.StartsWith("a,", StringComparison.OrdinalIgnoreCase)) continue;
 
-                // Tách: 3 dấu phẩy đầu chia a,b,c ; phần còn lại là expected (chứa dấu phẩy)
                 string[] head = SplitFirstN(line, ',', 3);
                 if (head == null) continue;
                 total++;
 
                 string rawA = head[0].Trim(), rawB = head[1].Trim(), rawC = head[2].Trim();
                 string expectedFull = head[3].Trim().Trim('"');
-                // expectedFull VD: "Vô nghiệm, x1 = x2 = NaN" / "Vô số nghiệm" / "2 nghiệm phân biệt, x1 = -1, x2 = -2"
 
                 int a, b, c;
                 if (!int.TryParse(rawA, out a) || !int.TryParse(rawB, out b) || !int.TryParse(rawC, out c))
@@ -93,7 +90,6 @@ namespace _03_Quan_Duc_Thinh
             }
         }
 
-        // Cắt dòng thành N+1 phần theo N dấu phẩy đầu tiên
         private static string[] SplitFirstN(string line, char sep, int n)
         {
             List<int> pos = new List<int>();
@@ -118,8 +114,6 @@ namespace _03_Quan_Duc_Thinh
             return Regex.Replace(t, @"\s+", " ");
         }
 
-        // CSV ghi tắt thiếu chữ "Có " ở đầu -> chấp nhận actual.EndsWith(expected)
-        // VD actual "Có 1 nghiệm" khớp expected "1 nghiệm"
         private static bool IsMsgMatch(string actual, string expected)
         {
             string a = Norm(actual);
@@ -174,11 +168,9 @@ namespace _03_Quan_Duc_Thinh
         {
             if (!hasX)
             {
-                // Theo spec: vô nghiệm / vô số nghiệm thì x1 = x2 = NaN
                 return float.IsNaN(actX1) && float.IsNaN(actX2);
             }
             if (FloatEqual(expX1, actX1) && FloatEqual(expX2, actX2)) return true;
-            // 2 nghiệm phân biệt: cho phép đảo thứ tự x1, x2
             return FloatEqual(expX1, actX2) && FloatEqual(expX2, actX1);
         }
 

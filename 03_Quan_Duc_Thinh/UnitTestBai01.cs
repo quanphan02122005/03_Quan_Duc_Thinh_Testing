@@ -48,7 +48,7 @@ namespace _03_Quan_Duc_Thinh
 
                 TestContext.WriteLine($"a={a}, b={b}, c={c} => Max = {actual}");
 
-                Assert.AreEqual(expected, actual, $"a={a}, b={b}, c={c}: Giá trị Max không đúng.");
+                Assert.AreEqual(expected, actual, $"a={a}, b={b}, c={c}");
             }
             catch (IndexOutOfRangeException ex)
             {
